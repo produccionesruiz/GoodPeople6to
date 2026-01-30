@@ -310,7 +310,7 @@
       if (!audioUnlocked) return;
       video.play().catch(() => {});
       audio.currentTime = 0;
-      audio.play().catch(() => {});
+      //audio.play().catch(() => {});
     });
 
     target.addEventListener('targetLost', () => {
@@ -324,5 +324,6 @@
 
 </body>
 </html>
+
 
 
