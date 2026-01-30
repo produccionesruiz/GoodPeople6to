@@ -85,7 +85,7 @@
 
   <a-assets>
     <!-- ================= VIDEOS ================= -->
-    <!-- ALUMNOS 01 - 15 -->
+    <!-- ALUMNOS 01 - 25 -->
     <video id="video01" src="videos/alumno01.mp4" loop playsinline></video>
     <video id="video02" src="videos/alumno02.mp4" loop playsinline></video>
     <video id="video03" src="videos/alumno03.mp4" loop playsinline></video>
@@ -101,16 +101,16 @@
     <video id="video13" src="videos/alumno13.mp4" loop playsinline></video>
     <video id="video14" src="videos/alumno14.mp4" loop playsinline></video>
     <video id="video15" src="videos/alumno15.mp4" loop playsinline></video>
-    <video id="video06" src="videos/alumno16.mp4" loop playsinline></video>
-    <video id="video07" src="videos/alumno17.mp4" loop playsinline></video>
-    <video id="video08" src="videos/alumno18.mp4" loop playsinline></video>
-    <video id="video09" src="videos/alumno19.mp4" loop playsinline></video>
-    <video id="video10" src="videos/alumno20.mp4" loop playsinline></video>
-    <video id="video11" src="videos/alumno21.mp4" loop playsinline></video>
-    <video id="video12" src="videos/alumno22.mp4" loop playsinline></video>
-    <video id="video13" src="videos/alumno23.mp4" loop playsinline></video>
-    <video id="video14" src="videos/alumno24.mp4" loop playsinline></video>
-    <video id="video15" src="videos/alumno25.mp4" loop playsinline></video>
+    <video id="video16" src="videos/alumno16.mp4" loop playsinline></video>
+    <video id="video17" src="videos/alumno17.mp4" loop playsinline></video>
+    <video id="video18" src="videos/alumno18.mp4" loop playsinline></video>
+    <video id="video19" src="videos/alumno19.mp4" loop playsinline></video>
+    <video id="video20" src="videos/alumno20.mp4" loop playsinline></video>
+    <video id="video21" src="videos/alumno21.mp4" loop playsinline></video>
+    <video id="video22" src="videos/alumno22.mp4" loop playsinline></video>
+    <video id="video23" src="videos/alumno23.mp4" loop playsinline></video>
+    <video id="video24" src="videos/alumno24.mp4" loop playsinline></video>
+    <video id="video25" src="videos/alumno25.mp4" loop playsinline></video>
 
     <!-- ESPECIALES -->
     <video id="videoProfesor" src="videos/profesor.mp4" loop playsinline></video>
@@ -133,17 +133,16 @@
     <audio id="audio13" src="audios/alumno13.mp3"></audio>
     <audio id="audio14" src="audios/alumno14.mp3"></audio>
     <audio id="audio15" src="audios/alumno15.mp3"></audio>
-    
-    <audio id="audio06" src="audios/alumno16.mp3"></audio>
-    <audio id="audio07" src="audios/alumno17.mp3"></audio>
-    <audio id="audio08" src="audios/alumno18.mp3"></audio>
-    <audio id="audio09" src="audios/alumno19.mp3"></audio>
-    <audio id="audio10" src="audios/alumno20.mp3"></audio>
-    <audio id="audio11" src="audios/alumno21.mp3"></audio>
-    <audio id="audio12" src="audios/alumno22.mp3"></audio>
-    <audio id="audio13" src="audios/alumno23.mp3"></audio>
-    <audio id="audio14" src="audios/alumno24.mp3"></audio>
-    <audio id="audio15" src="audios/alumno25.mp3"></audio>
+    <audio id="audio16" src="audios/alumno16.mp3"></audio>
+    <audio id="audio17" src="audios/alumno17.mp3"></audio>
+    <audio id="audio18" src="audios/alumno18.mp3"></audio>
+    <audio id="audio19" src="audios/alumno19.mp3"></audio>
+    <audio id="audio20" src="audios/alumno20.mp3"></audio>
+    <audio id="audio21" src="audios/alumno21.mp3"></audio>
+    <audio id="audio22" src="audios/alumno22.mp3"></audio>
+    <audio id="audio23" src="audios/alumno23.mp3"></audio>
+    <audio id="audio24" src="audios/alumno24.mp3"></audio>
+    <audio id="audio25" src="audios/alumno25.mp3"></audio>
     
     <audio id="audioProfesor" src="audios/profesor.mp3"></audio>
     <audio id="audioGrupal01" src="audios/grupal01.mp3"></audio>
@@ -284,7 +283,7 @@
 
   <!-- GRUPAL01 -->
   <a-entity mindar-image-target="targetIndex: 26" data-video="videoGrupal01" data-audio="audioGrupal01">
-    <a-video src="#videoGrupal01" width="1" height="0.47" material="shader: flat"></a-video>
+    <a-video src="#videoGrupal01" width="1" height="0.56" material="shader: flat"></a-video>
   </a-entity> 
 
   <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -309,7 +308,7 @@
       if (!audioUnlocked) return;
       video.play().catch(() => {});
       audio.currentTime = 0;
-      //audio.play().catch(() => {});
+      audio.play().catch(() => {});
     });
 
     target.addEventListener('targetLost', () => {
